@@ -1,6 +1,6 @@
 {
   "name": "cordova-facebook-audnet-sdk",
-  "version": "4.26.1",
+  "version": "4.26.2",
   "description": "Add Facebook AudienceNetwork SDK to Cordova porject, as dependency for other plugins",
   "cordova": {
     "id": "cordova-facebook-audnet-sdk",

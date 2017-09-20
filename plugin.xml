@@ -3,7 +3,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-facebook-audnet-sdk"
-        version="4.26.1">
+        version="4.26.2">
       
   <name>Facebook AudienceNetwork SDK for Cordova</name>
   <description>Add Facebook SDK to Cordova porject, as dependency for other plugins</description>
@@ -43,11 +43,15 @@
 
     <!-- FBAudienceNetwork in cocapods is not up to date, so we still download the SDK -->
     <framework src="FBAudienceNetwork.framework" custom="true" />
-    <framework src="KVOController.framework" custom="true" />
+
+    <header-file src="src/ios/KVOController.h" />
+    <header-file src="src/ios/FBKVOController.h" />
+    <source-file src="src/ios/FBKVOController.m" />
+    <header-file src="src/ios/NSObject+FBKVOController.h" />
+    <source-file src="src/ios/NSObject+FBKVOController.m" />
 
     <!-- required cordova 6.4.0 or higher -->
     <!-- framework src="FBAudienceNetwork" type="podspec" spec="~> 4.26.0"/ -->
-    <!-- framework src="KVOController" type="podspec" spec="~> 1.2.0"/ -->
   </platform>
 
 </plugin>
